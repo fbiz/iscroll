@@ -676,8 +676,8 @@ IScroll.prototype = {
 		this.wrapperHeight	= this.wrapper.clientHeight;
 
 /* REPLACE START: refresh */
-	this.scrollerWidth	= Math.round(this.scroller.offsetWidth * this.scale);
-	this.scrollerHeight	= Math.round(this.scroller.offsetHeight * this.scale);
+	this.scrollerWidth	= Math.round(this.scroller.scrollWidth * this.scale);
+	this.scrollerHeight	= Math.round(this.scroller.scrollHeight * this.scale);
 
 	this.maxScrollX		= this.wrapperWidth - this.scrollerWidth;
 	this.maxScrollY		= this.wrapperHeight - this.scrollerHeight;
